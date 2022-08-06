@@ -14,7 +14,7 @@ final class ClienteHttp {
     private let apiKey = "bda53789-d59e-46cd-9bc4-2936630fde39"
     private let kStatusOk = 200...299
     func getGatos(success: @escaping( _ cats:Gatos) -> (),failure : @escaping(_ error:Error?) -> ()){
-        let header : HTTPHeaders = [.authorization("api-x-key:\(apiKey)")
+        let _: HTTPHeaders = [.authorization("api-x-key:\(apiKey)")]
         
         //Utilizando el decoder para variables especiales
         AF.request(bUrl, method: .get).validate(statusCode: kStatusOk).responseDecodable(of: Gatos.self) {
