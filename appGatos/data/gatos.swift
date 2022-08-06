@@ -7,16 +7,40 @@
 
 import Foundation
 
+// MARK: Posible solucion no resuelve la lista
 
-struct Gatos {
-    let gato : Gato
+//struct respuesta {
+//    let respon : [String?]
+//}
+
+struct Gatos: Decodable {
+    let gato:Gato
 }
 
-struct Gato {
+struct Gato: Decodable {
     let breedName: String?
     let origin: String?
     let affectionLevel: Int?
     let inteligent: Int?
-    let image: String?
-    
+    let image: imagenGato?
+
+enum codingKeys: String, CodingKey {
+    case breedName = "name"
+    case origin
+    case affectionLevel = "affection_level"
+    case inteligent
+    case image
+    }
 }
+
+struct imagenGato: Decodable {
+    let id: String?
+    let url: String?
+}
+
+//"image": {
+//            "id": "0XYvRd7oD",
+//            "width": 1204,
+//            "height": 1445,
+//            "url": "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"
+// }

@@ -12,6 +12,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        ClienteHttp.shared.getGatos{ (gatos) in
+            print(gatos)
+        } failure: { error in
+            print(error.debugDescription)
+        }
     }
 
 
