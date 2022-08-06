@@ -14,6 +14,7 @@
 		C42AB3B5289EA92B003E970C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42AB3B4289EA92B003E970C /* Assets.xcassets */; };
 		C42AB3B8289EA92B003E970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42AB3B6289EA92B003E970C /* LaunchScreen.storyboard */; };
 		C42AB3C1289EAAE5003E970C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C42AB3C0289EAAE5003E970C /* Alamofire */; };
+		C42AB3C4289EAB70003E970C /* gatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42AB3C3289EAB70003E970C /* gatos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C42AB3B4289EA92B003E970C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C42AB3B7289EA92B003E970C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C42AB3B9289EA92B003E970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42AB3C3289EAB70003E970C /* gatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gatos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		C42AB3AA289EA929003E970C /* appGatos */ = {
 			isa = PBXGroup;
 			children = (
+				C42AB3C2289EAB5A003E970C /* data */,
 				C42AB3AB289EA929003E970C /* AppDelegate.swift */,
 				C42AB3AD289EA929003E970C /* SceneDelegate.swift */,
 				C42AB3AF289EA929003E970C /* ViewController.swift */,
@@ -67,6 +70,14 @@
 				C42AB3B9289EA92B003E970C /* Info.plist */,
 			);
 			path = appGatos;
+			sourceTree = "<group>";
+		};
+		C42AB3C2289EAB5A003E970C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				C42AB3C3289EAB70003E970C /* gatos.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42AB3C4289EAB70003E970C /* gatos.swift in Sources */,
 				C42AB3B0289EA929003E970C /* ViewController.swift in Sources */,
 				C42AB3AC289EA929003E970C /* AppDelegate.swift in Sources */,
 				C42AB3AE289EA929003E970C /* SceneDelegate.swift in Sources */,
